@@ -1,0 +1,40 @@
+.checkWrap {
+    /* width: 24px;
+    height: 24px; */
+    position: relative;
+}
+.checkbox {
+    position: absolute;
+    inset: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.marker {
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.checkbox ~ .marker::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: block;
+    width: 15px;
+    height: 8px;
+    border: 1px solid var(--main-color);
+    border-width: 0 0 2px 2px;
+    transform: scale(0) rotate(-45deg);
+    transition: 0.2s all;
+}
+
+.checkbox:checked ~ .marker::after {
+    transform: scale(1) rotate(-45deg);
+}

@@ -1,0 +1,12 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input {
+    height: 30px;
+    width: 200px;
+}
+.error {
+    color: red;
+}

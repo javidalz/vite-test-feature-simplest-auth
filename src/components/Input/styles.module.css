@@ -1,0 +1,43 @@
+.error {
+    color: red;
+}
+
+.input {
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.inputWrapError {
+    position: relative;
+}
+.inputWrapError::before {
+    content: '!';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    color: white;
+    background: red;
+    font-size: 12px;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.inputError {
+    border: 1px solid red;
+}
+.label {
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}

@@ -1,0 +1,55 @@
+:root {
+    --main-color: #8e44ad;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.font-large {
+    font-size: 40px;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 8px;
+    &__avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+    }
+}
+
+table,
+tr,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.flex {
+    display: flex;
+}
+.column {
+    flex-direction: column;
+}
+.gap-10 {
+    gap: 10px;
+}
